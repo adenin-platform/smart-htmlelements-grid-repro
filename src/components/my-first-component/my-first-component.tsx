@@ -76,7 +76,7 @@ export class MyFirstComponent {
   render() {
     return (
       <Host>
-        <smart-grid id="grid"></smart-grid>
+        <smart-ui-grid id="grid"></smart-ui-grid>
       </Host>
     );
   }
