@@ -1,3 +1,5 @@
+@import '../../../node_modules/smart-webcomponents/source/styles/smart.default.css';
+
 :host {
   display: block;
 }
