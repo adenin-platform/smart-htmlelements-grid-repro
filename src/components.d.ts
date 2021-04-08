@@ -6,6 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { MatchResults } from "@stencil/router";
+import { GridBehavior, GridColumn } from "smart-webcomponents/source/typescript/smart.elements";
 export namespace Components {
     interface AppHome {
     }
@@ -15,6 +16,15 @@ export namespace Components {
     interface AppRoot {
     }
     interface MyFirstComponent {
+        "appearance": any;
+        "behavior": GridBehavior;
+        "columns": GridColumn[];
+        "dataSource": any;
+        "editing": any;
+        "pager": any;
+        "paging": any;
+        "selection": any;
+        "sorting": any;
     }
 }
 declare global {
@@ -58,6 +68,15 @@ declare namespace LocalJSX {
     interface AppRoot {
     }
     interface MyFirstComponent {
+        "appearance"?: any;
+        "behavior"?: GridBehavior;
+        "columns"?: GridColumn[];
+        "dataSource"?: any;
+        "editing"?: any;
+        "pager"?: any;
+        "paging"?: any;
+        "selection"?: any;
+        "sorting"?: any;
     }
     interface IntrinsicElements {
         "app-home": AppHome;
